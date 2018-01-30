@@ -15,30 +15,13 @@
       #navbar {
         width: 100%;
         display: block;
-        position: fixed;
-      }
-      #background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        background-image: url('img/Flatirons.png');
-        background-size: contain;
-      }
-      #background-filter{
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        opacity: 0.2;
-        background-color: White;
-      }
-      #info{
-        position: relative;
       }
       #info img{
         display: inline-block;
+        width: 100%;
+        /*
         max-width: 300px;
-        margin-top: 120px;
+        margin-top: 120px;*/
       }
       #info div{
         margin: 0px 10px 0px 0px;
@@ -71,18 +54,18 @@
     </div>
   </nav>
 
-    <div id="mainContainer">
-      <div id="background">
-        <div id="background-filter">
-
-        </div>
-      </div>
+    <div id="mainContainer" class="container">
       <div id="info" class="text-center">
-        <img  src="img/self.png" alt="">
+        <img  src="img/self.jpg" alt="">
         <div>
-          <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a more professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
+          <i class="fa fa-instagram fa-2x" aria-hidden="true">  </i>
+          <p>  </p>
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true">  </i>
+          <p>  </p>
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
         </div>
-      </div
+        <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a more professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -91,7 +74,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <?php
-      header('Location: construction.php'); 
+      //header('Location: construction.php');
      ?>
   </body>
 </html>
