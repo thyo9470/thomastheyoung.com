@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,6 +14,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
+      @font-face {
+        font-family: 'simplificasimplifica';
+        src: url('fonts/simplifica/simplifica_typeface-webfont.woff2') format('woff2'),
+             url('fonts/simplifica/simplifica_typeface-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      h1{
+        font-family: 'simplifica', Arial, sans-serif;
+        font-weight:normal;
+        font-style:normal;
+      }
+      p {
+        font-family: 'simplifica', Arial, sans-serif;
+        font-weight:normal;
+        font-style:normal;
+        font-size: 2em;
+        line-height: 1em;
+      }
+      a{
+        color: #202020;
+      }
+      a:hover{
+        color: #202020;
+      }
+      a:hover{
+        color: #202020;
+      }
+      a:active{
+        color: #202020;
+      }
       #navbar {
         width: 100%;
         display: block;
@@ -56,13 +89,14 @@
 
     <div id="mainContainer" class="container">
       <div id="info" class="text-center">
+        <h1 class="display-3">Thomas Young</h1>
         <img  src="img/self.jpg" alt="">
         <div>
-          <i class="fa fa-instagram fa-2x" aria-hidden="true">  </i>
+          <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
           <p>  </p>
-          <i class="fa fa-linkedin fa-2x" aria-hidden="true">  </i>
+          <a href="https://www.linkedin.com/in/thomasy314/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true">  </i></a>
           <p>  </p>
-          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          <a href="https://github.com/thyo9470" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         </div>
         <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a more professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
       </div>
