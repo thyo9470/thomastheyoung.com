@@ -8,8 +8,11 @@
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-    body {
+    p {
         font-size: 0.9em;
+    }
+    h1{
+        font-size: 3.9em;
     }
 }
 
@@ -18,19 +21,28 @@
     body {
         font-size: 1em;
     }
+    h1{
+        font-size: 4em;
+    }
 }
 
 /* md */
 @media screen and (min-width: 992px) {
-    body {
+    p {
         font-size: 1.2em;
+    }
+    h1{
+        font-size: 4.2em;
     }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
-    body {
+    p {
         font-size: 1.9em;
+    }
+    h1{
+        font-size: 5em;
     }
 }
 

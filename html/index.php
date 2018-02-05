@@ -34,7 +34,7 @@
 
     <div id="mainContainer" class="container">
       <div id="info" class="text-center">
-        <h1 class="display-3">Thomas Young</h1>
+        <h1>Thomas Young</h1>
         <img  src="img/self.jpg" alt="">
         <div>
           <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
