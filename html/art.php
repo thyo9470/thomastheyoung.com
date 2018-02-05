@@ -20,7 +20,7 @@
   <!-- Modal -->
   <div class="modal fade" id="showImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" style="max-width:100%;" role="document">
-        <img class="modal-content" id="modalImage" src="img/gats_bless.jpg" alt="">
+        <img class="modal-content" id="modalImage" src="" alt="">
     </div>
   </div>
 
@@ -62,41 +62,6 @@
         </a>
       </div>
       <!--<div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
         <a href="#" class="d-block mb-4 h-100">
           <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
         </a>
