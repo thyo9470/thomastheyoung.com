@@ -5,54 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
-h1{
-  font-family: 'simplifica', Arial, sans-serif;
+
+body{
+  font-family: 'simplifica', Helvetica, sans-serif;
   font-weight:normal;
   font-style:normal;
 }
-p {
-  font-family: 'simplifica', Arial, sans-serif;
-  font-weight:normal;
-  font-style:normal;
-  font-size: 2em;
-  line-height: 1em;
-}
-a{
-  color: #202020;
-}
-a:hover{
-  color: #202020;
-}
-a:hover{
-  color: #202020;
-}
-a:active{
-  color: #202020;
-}
-#navbar {
-  width: 100%;
-  display: block;
-}
-#info img{
-  display: inline-block;
-  width: 100%;
-  /*
-  max-width: 300px;
-  margin-top: 120px;*/
-}
-#info div{
-  margin: 0px 10px 0px 0px;
-  padding: 5px 5px 5px 5px;
-  height: auto;
-  width: auto;
-  background-color: rgba(255, 255, 255, .5);
-}
-#info div p{
-  display: inline-block;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
-.thumbnail{
-  max-width: 350px;
-  margin-bottom: 15px;
+
+.nav-link{
+  font-family: Arial, sans-serif;
 }

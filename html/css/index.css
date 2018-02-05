@@ -7,6 +7,16 @@
   font-style: normal;
 }
 
+body{
+  font-family: 'simplifica', Helvetica, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+}
+
+.nav-link{
+  font-family: Arial, sans-serif;
+}
+
 /* xs < 768 */
 @media screen and (max-width: 767px) {
     p {
@@ -47,15 +57,8 @@
     }
 }
 
-h1{
-  font-family: 'simplifica', Arial, sans-serif;
-  font-weight:normal;
-  font-style:normal;
-}
 p {
-  font-family: 'simplifica', Arial, sans-serif;
-  font-weight:normal;
-  font-style:normal;
+
   /*font-size: 2em;*/
   line-height: 1em;
 }
