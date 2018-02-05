@@ -23,7 +23,7 @@ body{
     width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
   .modal-dialog {
           position: absolute;
           top: 50%;
@@ -32,7 +32,7 @@ body{
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1500px) {
   .modal-dialog {
           position: absolute;
           top: 50%;
