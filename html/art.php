@@ -84,6 +84,10 @@
       console.log($(this).attr("src"))
       modalImage.src = $(this).attr("src").replace("_thmb", "");
     });
+
+    $('#showImage').on('hidden.bs.modal', function (e) {
+      modalImage.src = ""
+    })
     </script>
   </body>
 </html>
