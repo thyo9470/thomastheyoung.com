@@ -32,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.php">Home</a>
+          <a class="nav-item nav-link" href="index.php">Home</a>
           <a class="nav-item nav-link active" href="#">Art <span class="sr-only">(current)</span></a>
         </div>
       </div>
