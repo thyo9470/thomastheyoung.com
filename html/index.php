@@ -13,62 +13,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style type="text/css">
-      @font-face {
-        font-family: 'simplificasimplifica';
-        src: url('fonts/simplifica/simplifica_typeface-webfont.woff2') format('woff2'),
-             url('fonts/simplifica/simplifica_typeface-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-      }
-      h1{
-        font-family: 'simplifica', Arial, sans-serif;
-        font-weight:normal;
-        font-style:normal;
-      }
-      p {
-        font-family: 'simplifica', Arial, sans-serif;
-        font-weight:normal;
-        font-style:normal;
-        font-size: 2em;
-        line-height: 1em;
-      }
-      a{
-        color: #202020;
-      }
-      a:hover{
-        color: #202020;
-      }
-      a:hover{
-        color: #202020;
-      }
-      a:active{
-        color: #202020;
-      }
-      #navbar {
-        width: 100%;
-        display: block;
-      }
-      #info img{
-        display: inline-block;
-        width: 100%;
-        /*
-        max-width: 300px;
-        margin-top: 120px;*/
-      }
-      #info div{
-        margin: 0px 10px 0px 0px;
-        padding: 5px 5px 5px 5px;
-        height: auto;
-        width: auto;
-        background-color: rgba(255, 255, 255, .5);
-      }
-      #info div p{
-        display: inline-block;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
 
@@ -98,7 +43,7 @@
           <p>  </p>
           <a href="https://github.com/thyo9470" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         </div>
-        <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a more professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
+        <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
       </div>
     </div>
 
