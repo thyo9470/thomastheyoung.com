@@ -20,24 +20,21 @@ body{
 .modal-content {
     margin: auto;
     display: block;
-    width: 50%;
+    width: 100%;
 }
 
-.modal {
-  text-align: center;
-  padding: 0!important;
-}
-
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
 }
 
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+    }
