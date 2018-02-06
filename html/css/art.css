@@ -31,18 +31,15 @@ body{
           transform: translate(-50%, -50%) !important;
   }
 }
-<<<<<<< HEAD
-=======
 
- @media screen and (orientation:landscape) {
-   .modal-dialog {
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%) !important;
-   }
- }
->>>>>>> 09d71c6d6a3d3123714c1ed2d4311dd43b0bcb45
+@media screen and (min-width: 1200px) {
+  .modal-dialog {
+          position: absolute;
+          top: 50%;
+          left: 25%;
+          transform: translate(-25%, -50%) !important;
+  }
+}
 
 @media screen and (max-width: 1500px) {
   .modal-dialog {
