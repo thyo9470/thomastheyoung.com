@@ -23,6 +23,15 @@ body{
     width: 100%;
 }
 
+@media screen and (min-width: 1500px) {
+  .modal-dialog {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) !important;
+  }
+}
+
  @media screen and (orientation:landscape) {
    .modal-dialog {
            position: absolute;
