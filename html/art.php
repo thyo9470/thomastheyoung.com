@@ -20,10 +20,11 @@
   <!-- Modal -->
   <div class="modal fade" id="showImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" style="max-width:100%;" role="document">
-        <img class="modal-content" id="modalImage" src="" alt="">
+      <img class="modal-content" id="modalImage" src="" alt="">
     </div>
   </div>
 
+<!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php"><img src="img/logo.png" style="max-height:50px;"></a>
@@ -39,6 +40,7 @@
     </div>
   </nav>
 
+<!-- Main Container -->
   <div id="mainContainer" class="container">
     <div class="row text-center text-lg-left container">
       <div class="col-lg-3 col-md-4 col-xs-6">
