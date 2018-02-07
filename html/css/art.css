@@ -16,12 +16,7 @@ body{
   font-family: Arial, sans-serif;
 }
 
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 100vh;
-}
+
 
 /*@media all and (orientation:landscape) {
   .modal-dialog {
@@ -32,7 +27,27 @@ body{
   }
 }*/
 
+@media all and (orientation:portrait) {
+  /* Modal Content (Image) */
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 100%;
+  }
+  .modal-dialog {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -60%) !important;
+  }
+}
+
 @media all and (orientation:landscape) {
+  /* Modal Content (Image) */
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 100vh;
+  }
   .modal-dialog {
           position: absolute;
           top: 50%;
