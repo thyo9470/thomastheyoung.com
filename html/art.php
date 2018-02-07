@@ -83,8 +83,8 @@
 
     var modalImg = document.getElementById("modalImage");
     $( ".image" ).click(function() {
-      console.log($(this).attr("src"))
       modalImage.src = $(this).attr("src").replace("_thmb", "");
+        $("#modalImage").append('<img src="img/gats_bless.jpg">');
     });
 
     $('#showImage').on('hidden.bs.modal', function (e) {

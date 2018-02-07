@@ -20,22 +20,23 @@ body{
 .modal-content {
     margin: auto;
     display: block;
-    width: 100%;
+    width: 100vh;
 }
 
-@media all and (orientation:landscape) {
+/*@media all and (orientation:landscape) {
   .modal-dialog {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) !important;
   }
-}
+}*/
 
-@media all and (orientation:portrait) {
+@media all and (orientation:landscape) {
   .modal-dialog {
           position: absolute;
           top: 50%;
-          transform: translate(0, -50%) !important;
+          left: 50%;
+          transform: translate(-50%, -60%) !important;
   }
 }
