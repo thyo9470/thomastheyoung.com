@@ -16,11 +16,54 @@
     <link rel="stylesheet" href="css/art.css">
   </head>
   <body>
+<!--
+    <div  class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 modal-content" id="modalImage" src="" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="Third slide">
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </div>-->
+
 
   <!-- Modal -->
   <div class="modal fade" id="showImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" style="max-width:100%;" role="document">
-      <img class="modal-content" id="modalImage" src="" alt="">
+      <!-- carousel -->
+      <div class="modal-content" style="background-color:rgba(0, 0, 0, 0); border:none;">
+      <div class="modal-body">
+        <div  class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 modal-content" id="modalImage" src="" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="Third slide">
+            </div>
+            <ol class="carousel-indicators">
+              <a href="#" style="width=50px"><img src="img/gats_shoes.jpg" ></a>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 
@@ -84,7 +127,6 @@
     var modalImg = document.getElementById("modalImage");
     $( ".image" ).click(function() {
       modalImage.src = $(this).attr("src").replace("_thmb", "");
-        $("#modalImage").append('<img src="img/gats_bless.jpg">');
     });
 
     $('#showImage').on('hidden.bs.modal', function (e) {
