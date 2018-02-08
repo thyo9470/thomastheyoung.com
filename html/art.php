@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dorsa|Open+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="css/art.css">
   </head>
@@ -43,23 +44,31 @@
       <!-- carousel -->
       <div class="modal-content" style="background-color:rgba(0, 0, 0, 0); border:none;">
       <div class="modal-body">
-        <div  class="carousel slide" data-ride="carousel">
+        <div  class="carousel slide" id="carousel" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100 modal-content" id="modalImage" src="" alt="">
+              <img class="d-block w-100 modal-content" src="" alt="">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="Second slide">
+              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="Third slide">
+              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="">
             </div>
             <ol class="carousel-indicators">
-              <a href="#" style="width=50px"><img src="img/gats_shoes.jpg" ></a>
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
             </ol>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row" style="width:100%;">
+          <div id="modal-thumbnail-container">
+            <a href="#" data-target="#carousel" data-slide-to="0" class="col"><img class="modalThumbnail" src="img/gats_shoes.jpg"></a>
+            <a href="#" data-target="#carousel" data-slide-to="1" class="col"><img class="modalThumbnail" src="img/gats_shoes.jpg"></a>
+            <a href="#" data-target="#carousel" data-slide-to="2" class="col"><img class="modalThumbnail" src="img/gats_shoes.jpg"></a>
           </div>
         </div>
       </div>
@@ -87,7 +96,7 @@
   <div id="mainContainer" class="container">
     <div class="row text-center text-lg-left container">
       <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
+        <a href="#" class="d-block mb-4 h-100"  onclick="setImage('img/gats_shoes.jpg')">
           <img class="img-fluid img-thumbnail image" src="img/gats_shoes_thmb.jpg" alt="" data-toggle="modal" data-target="#showImage">
         </a>
       </div>
@@ -124,10 +133,16 @@
       $('#myInput').trigger('focus')
     })
 
-    var modalImg = document.getElementById("modalImage");
+    var carousel = document.getElementById("carousel");
+    var modalImage = document.getElementById("");
     $( ".image" ).click(function() {
-      modalImage.src = $(this).attr("src").replace("_thmb", "");
+      //modalImage.src = $(this).attr("src").replace("_thmb", "");
     });
+
+    function setImage(url){
+      alert(url);
+      modalImage.src = url;
+    }
 
     $('#showImage').on('hidden.bs.modal', function (e) {
       modalImage.src = ""
