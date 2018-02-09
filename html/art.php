@@ -95,42 +95,22 @@
 <!-- Main Container -->
   <div id="mainContainer" class="container">
     <div class="row text-center text-lg-left container">
-        <?php
-
-          $imgDir = scandir('img/');
-          for($i = 2; $i < count($imgDir)-2; $i++){
-            if(is_dir("img/" . $imgDir[$i])){
-              $path = 'img/' . $imgDir[$i];
-              $images = scandir($path, 1);
-              $out =  "<div class='col-lg-3 col-md-4 col-xs-6.>" .
-                      "<a href='#' class='d-block mb-4 h-100'  onclick='setImage(". $imgDir[$i] .")'>" .
-                      "<img class='img-fluid img-thumbnail image' src=" . $path . '/' .$images[0] . " alt='' data-toggle='modal' data-target='#showImage'>" .
-                      "</a>".
-                      "</div>";
-              echo $out;
-            }
-          }
-          /*for($i = 0; $i < count($imgDir)-2; $i++){
-
-
+      <?php
+        $imgDir = scandir('img/');
+        for($i = 2; $i < count($imgDir); $i++){
+          if(is_dir("img/" . $imgDir[$i])){
+            $path = 'img/' . $imgDir[$i];
+            $images = scandir($path);
+            echo $path . '/' .$images[3];
+            $out =  "<div class='col-lg-3 col-md-4 col-xs-6.>" .
+                    "<a href='#' class='d-block mb-4 h-100'  onclick='setImage(". $path . '/' .$images[3] .")'>" .
+                    "<img class='img-fluid img-thumbnail image' src=" . $path . '/' .$images[2] . " alt='' data-toggle='modal' data-target='#showImage'>" .
+                    "</a>".
+                    "</div>";
             echo $out;
-          }*/
-         ?>
-      <!--<div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail image" src="img/gats_shoes2_thmb.jpg" alt="" data-toggle="modal" data-target="#showImage">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail image" src="img/gats_bless_thmb.jpg" alt="" data-toggle="modal" data-target="#showImage">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a href="#" class="d-block mb-4 h-100">
-          <img class="img-fluid img-thumbnail image" src="img/pink_af1_rock_thmb.jpg" alt="" data-toggle="modal" data-target="#showImage">
-        </a>
-      </div>-->
+          }
+        }
+      ?>
       <!--<div class="col-lg-3 col-md-4 col-xs-6">
         <a href="#" class="d-block mb-4 h-100">
           <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
@@ -159,6 +139,10 @@
       alert(url.remove('_thmb', ''));
       modalImage.src = url;
     }
+
+    $("h2").on("click", "p.test", function(){
+        alert($(this).text());
+    });
 
     $('#showImage').on('hidden.bs.modal', function (e) {
       modalImage.src = ""
