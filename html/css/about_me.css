@@ -1,0 +1,14 @@
+
+
+
+#face{
+    overflow: hidden;
+    width: 50px;
+}
+
+#face img{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+}
