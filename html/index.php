@@ -63,6 +63,14 @@
     if($(window).width() >= $(window).height()) {
       $('#background-image').attr('src', 'img/F-landscapes/1-landscapes.png');
     }
+    $(window).resize(function(){
+      if($(window).width() < $(window).height()) {
+        $('#background-image').attr('src', 'img/background-portrait.png');
+      }
+      if($(window).width() >= $(window).height()) {
+        $('#background-image').attr('src', 'img/F-landscapes/1-landscapes.png');
+      }
+    })
     </script>
   </body>
 </html>
