@@ -1,42 +1,4 @@
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-    p {
-        font-size: 1.1em;
-    }
-    h1{
-        font-size: 4.2rem;
-    }
-}
 
-/* sm */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1.1em;
-    }
-    h1{
-        font-size: 4.6rem;
-    }
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-    p {
-        font-size: 1.1em;
-    }
-    h1{
-        font-size: 5.0rem;
-    }
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-    p {
-        font-size: 1.2em;
-    }
-    h1{
-        font-size: 5.5em;
-    }
-}
 
 html, body {margin: 0; height: 100%; overflow: hidden;;}
 
@@ -44,11 +6,7 @@ h1{
   font-family: 'Dorsa', Helvetica, sans-serif;
   font-weight:normal;
   font-style:normal;
-}
-
-p{
-  font-family: 'Open Sans';
-  line-height: 1em;
+  font-size: 6.0em;
 }
 
 .nav-link{
@@ -66,11 +24,20 @@ p{
     background-repeat:no-repeat;
     z-index: -1;
 }
+
+.myButton{
+  font-size: 1.1em;
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border:2px solid black;
+}
+
 #mainContainer {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -60%) !important;
+    padding-top: 20vh;
+    /*left: 50%;
+    transform: translate(-50%, -70%) !important;*/
 }
 
 a{
@@ -103,7 +70,6 @@ a:active{
   padding: 5px 5px 5px 5px;
   height: auto;
   width: auto;
-  background-color: rgba(255, 255, 255, .5);
 }
 #info div p{
   display: inline-block;

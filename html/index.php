@@ -38,7 +38,11 @@
   <div id="mainContainer" class="container">
     <div id="info" class="text-center">
       <h1>Thomas Young</h1>
-      <!--<img  src="img/self.jpg" alt="">-->
+      <div >
+        <a class="myButton" href="art.php">Art</a>
+        <a class="myButton" href="#">About Me</a>
+      </div>
+      <!--<img  src="img/self.jpg" alt="">
       <div>
         <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
         <p>  </p>
@@ -46,7 +50,7 @@
         <p>  </p>
         <a href="https://github.com/thyo9470" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
       </div>
-      <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
+      <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>-->
     </div>
   </div>
 </div>
