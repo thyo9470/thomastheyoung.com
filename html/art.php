@@ -48,15 +48,12 @@
           <div id="carousel-inner" class="carousel-inner">
             <div id="image-container">
             </div>
-            <!--<ol class="carousel-indicators">
-              <li class="active">1</li>
-              <li>2</li>
-              <li>3</li>
-            </ol>-->
+            <ol class="carousel-indicators">
+            </ol>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
+      <!--2<div class="modal-footer">
         <div class="row" style="width:100%;">
           <div id="modal-thumbnail-container">
             <a href="#" data-target="#carousel" data-slide-to="0" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
@@ -64,7 +61,7 @@
             <a href="#" data-target="#carousel" data-slide-to="2" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
     </div>
   </div>
@@ -126,10 +123,14 @@
 
     function setImage(size, path, name){
       var modalOut = "<div class='carousel-item active'><img class='d-block w-100 modal-content' src=" + path + String(1) + name +"></div>"
+      var indicator = "<li class='active'>1</li>";
       $('#image-container').append(modalOut);
+      $('.carousel-indicators').append(indicator);
       for(i = 2; i <= size; i++){
         modalOut = "<div class='carousel-item'><img class='d-block w-100 modal-content' src=" + path + String(i) + name +"></div>"
+        indicator = "<li>" + String(i) + "</li>";
         $('#image-container').append(modalOut);
+        $('.carousel-indicators').append(indicator);
       }
     }
 
@@ -139,6 +140,7 @@
 
     $('#showImage').on('hidden.bs.modal', function (e) {
       $('#image-container').empty();
+      $('.carousel-indicators').empty();
     })
     </script>
   </body>
