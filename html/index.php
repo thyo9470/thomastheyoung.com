@@ -40,7 +40,7 @@
       <h1>Thomas Young</h1>
       <div >
         <a class="myButton" href="art.php">Art</a>
-        <a class="myButton" href="#">About Me</a>
+        <a class="myButton" href="about_me.php">About Me</a>
       </div>
       <!--<img  src="img/self.jpg" alt="">
       <div>
