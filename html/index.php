@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dorsa|Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dorsa|Open+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
   </head>
@@ -20,7 +20,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"><img src="img/logo.png" style="max-height:50px;"></a>
+      <a class="navbar-brand" href="index.php"><img id="logo" src="img/logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,20 +33,23 @@
     </div>
   </nav>
 
-    <div id="mainContainer" class="container">
-      <div id="info" class="text-center">
-        <h1>Thomas Young</h1>
-        <img  src="img/self.jpg" alt="">
-        <div>
-          <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
-          <p>  </p>
-          <a href="https://www.linkedin.com/in/thomasy314/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true">  </i></a>
-          <p>  </p>
-          <a href="https://github.com/thyo9470" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        </div>
-        <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
+<div class="fluid-container">
+  <img src="img/F-landscapes/1-landscapes.png" alt="">
+  <div id="mainContainer" class="container">
+    <div id="info" class="text-center">
+      <h1>Thomas Young</h1>
+      <!--<img  src="img/self.jpg" alt="">-->
+      <div>
+        <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
+        <p>  </p>
+        <a href="https://www.linkedin.com/in/thomasy314/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true">  </i></a>
+        <p>  </p>
+        <a href="https://github.com/thyo9470" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
       </div>
+      <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>
     </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

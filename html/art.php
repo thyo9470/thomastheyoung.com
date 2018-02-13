@@ -46,22 +46,9 @@
       <div class="modal-body">
         <div  class="carousel slide" id="carousel" data-ride="carousel">
           <div id="carousel-inner" class="carousel-inner">
-            <?php
-            $modalOut = "<div class='carousel-item active'>
-                   <img id='test' class='d-block w-100 modal-content' src='img/A_gats_shoes/B-gats-shoes.jpg' alt=''>
-                   </div>";
-            //echo $modalOut;
-            ?>
-            <!--<div class="carousel-item active">
-              <img class="d-block w-100 modal-content" src="" alt="">
+            <div id="image-container">
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 modal-content" src="img/A_gats_shoes/B-gats-shoes.jpg" alt="">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 modal-content" src="img/gats_shoes.jpg" alt="">
-            </div>
-            <ol class="carousel-indicators">
+            <!--<ol class="carousel-indicators">
               <li class="active">1</li>
               <li>2</li>
               <li>3</li>
@@ -69,15 +56,15 @@
           </div>
         </div>
       </div>
-      <!--<div class="modal-footer">
+      <div class="modal-footer">
         <div class="row" style="width:100%;">
           <div id="modal-thumbnail-container">
-            <a href="#" data-target="#carousel" data-slide-to="0" class="col"><img class="modalThumbnail" src="img/gats_shoes.jpg"></a>
-            <a href="#" data-target="#carousel" data-slide-to="1" class="col"><img class="modalThumbnail" src="img/gats_shoes.jpg"></a>
-            <a href="#" data-target="#carousel" data-slide-to="2" class="col"><img class="modalThumbnail" src="img/gats_shoes.jpg"></a>
+            <a href="#" data-target="#carousel" data-slide-to="0" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
+            <a href="#" data-target="#carousel" data-slide-to="1" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
+            <a href="#" data-target="#carousel" data-slide-to="2" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
           </div>
         </div>
-      </div>-->
+      </div>
     </div>
     </div>
   </div>
@@ -137,17 +124,12 @@
       $('#myInput').trigger('focus')
     })
 
-    var carousel = document.getElementById("carousel");
-  //  var test = document.getElementById("test");
     function setImage(size, path, name){
-      //alert(url.remove('_thmb', ''));
-      //test.src = url;
-      //var modalOut = "<div class='carousel-item active'> <img id='test' class='d-block w-100 modal-content' src='img/A_gats_shoes/B-gats-shoes.jpg' alt=''></div>";
       var modalOut = "<div class='carousel-item active'><img class='d-block w-100 modal-content' src=" + path + String(1) + name +"></div>"
-      $('.carousel-inner').append(modalOut);
+      $('#image-container').append(modalOut);
       for(i = 2; i <= size; i++){
         modalOut = "<div class='carousel-item'><img class='d-block w-100 modal-content' src=" + path + String(i) + name +"></div>"
-        $('.carousel-inner').append(modalOut);
+        $('#image-container').append(modalOut);
       }
     }
 
@@ -156,7 +138,7 @@
     });
 
     $('#showImage').on('hidden.bs.modal', function (e) {
-      $('.carousel-inner').empty();
+      $('#image-container').empty();
     })
     </script>
   </body>

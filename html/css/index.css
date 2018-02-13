@@ -1,21 +1,7 @@
-h1{
-  font-family: 'Dorsa', Helvetica, sans-serif;
-  font-weight:normal;
-  font-style:normal;
-}
-
-p{
-  font-family: 'Open Sans';
-}
-
-.nav-link{
-  font-family: Arial, sans-serif;
-}
-
 /* xs < 768 */
 @media screen and (max-width: 767px) {
     p {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
     h1{
         font-size: 4.2rem;
@@ -25,7 +11,7 @@ p{
 /* sm */
 @media screen and (min-width: 768px) {
     body {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     h1{
         font-size: 4.6rem;
@@ -35,7 +21,7 @@ p{
 /* md */
 @media screen and (min-width: 992px) {
     p {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
     h1{
         font-size: 5.0rem;
@@ -52,11 +38,41 @@ p{
     }
 }
 
-p {
+html, body {margin: 0; height: 100%; overflow: hidden;;}
 
-  /*font-size: 2em;*/
+h1{
+  font-family: 'Dorsa', Helvetica, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+}
+
+p{
+  font-family: 'Open Sans';
   line-height: 1em;
 }
+
+.nav-link{
+  font-family: Arial, sans-serif;
+}
+
+.fluid-container{
+  overflow: hidden;
+}
+
+.fluid-container img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat:no-repeat;
+    z-index: -1;
+}
+#mainContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%) !important;
+}
+
 a{
   color: #202020;
 }
@@ -73,14 +89,16 @@ a:active{
   width: 100%;
   display: block;
 }
+
+#logo{
+  max-height: 50px;
+}
+
 #info img{
   display: inline-block;
-  width: 100%;
-  /*
-  max-width: 300px;
-  margin-top: 120px;*/
+  width: 75%;
 }
-#info div{
+#info{
   margin: 0px 10px 0px 0px;
   padding: 5px 5px 5px 5px;
   height: auto;

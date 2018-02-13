@@ -36,6 +36,9 @@ p{
       display: block;
       width: 100%;
   }
+  .modal-footer{
+    color: rgba(0, 0, 0, 0);
+  }
   .modal-dialog {
           position: absolute;
           top: 50%;
@@ -48,7 +51,6 @@ p{
   .modal-content {
       margin: auto;
       display: block;
-      width: 100vh;
   }
   .modal-dialog {
           position: absolute;
