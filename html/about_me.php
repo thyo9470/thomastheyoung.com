@@ -17,11 +17,25 @@
   </head>
   <body>
 
-  <div class="fluid-container">
-    <div id="face">
-      <img  src="img/self-crop.jpg" alt="">
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.php"><img src="img/logo.png" style="max-height:50px;"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="index.php">Home</a>
+              <a class="nav-item nav-link active" href="#">Art <span class="sr-only">(current)</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="fluid-container">
+      <img id="header-image" src="img/self3.jpg" alt="">
     </div>
-  </div>
     <!--<div class="fluid-container">
       <div id="info">
         <img  src="img/self.jpg" alt="">
@@ -43,6 +57,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
   <?php
-    header('location: construction.php');
+    //header('location: construction.php');
    ?>
 </html>
