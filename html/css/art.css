@@ -49,10 +49,6 @@ p{
 
 @media all and (orientation:portrait) {
   html, body {margin: 0; height: 100%; overflow-x: hidden;}
-
-  body{
-    background-color: #4A0B2D;
-  }
   /* Modal Content (Image) */
   .modal-content {
       margin: auto;
