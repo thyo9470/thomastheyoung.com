@@ -43,7 +43,11 @@
         <h1>Thomas Young</h1>
         <div >
           <a class="myButton" href="#" onclick="loadOut()">Art</a>
+<<<<<<< HEAD
           <!--<a class="myButton" href="about_me.php">About Me</a>-->
+=======
+          <a class="myButton" href="about_me.php">About Me</a>
+>>>>>>> cffc274e6a7f16000cb30dc7926f3ed301817eeb
         </div>
         <!--<img  src="img/self.jpg" alt=""-1
         <div>
