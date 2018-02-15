@@ -64,7 +64,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.php">Home</a>
+          <a class="nav-item nav-link" href="#" onclick="loadOut()">Home</a>
           <a class="nav-item nav-link active" href="#">Art <span class="sr-only">(current)</span></a>
         </div>
       </div>
@@ -73,6 +73,7 @@
 
 <!-- Main Container -->
 <div class="fluid-container">
+  <img id="background-image" src="img/sunset.png" alt="">
   <div class="container">
   <div id="mainContainer" class="container">
     <div class="row text-center text-lg-left fluid-container">
@@ -101,7 +102,6 @@
     </div>
   </div>
 </div>
-  <img id="background-image" src="img/sunset.png" alt="">
 </div>
 
     <!-- Optional JavaScript -->
@@ -114,12 +114,11 @@
     $("#carousel").carousel({interval: false});
 
     function loadIn(){
-      $('#background-image').css('width', $(window).width()*2);
       $('#background-image').css('height', '100%');
-      $('#background-image').css('margin-left', -$(window).width()*0.7);
+      $('#background-image').css('right', '-700px');
       $('#background-image').animate(
           {
-              'margin-right': 0,
+              'right': 0,
               'opacity':1
           },1000, function(){
             $('#mainContainer').animate(
@@ -127,15 +126,29 @@
                 'opacity':1
               },1000
             );
-            $('body').css('background-color', '#4A0B2D');
           }
       );
     }
 
+    function loadOut(){
+      $('#mainContainer').animate(
+        {
+          'opacity':-1
+        },500
+      )
+      $('#background-image').animate(
+            {
+                'right': -900,
+                'opacity':-1
+            },1000,
+            function(){
+              window.location.href = 'index.php';
+            }
+        );
+        $('#info').fadeOut('slow');
+    }
+
     window.onload = loadIn();
-    $( window ).resize(function() {
-      loadIn();
-    });
 
     $('#myModal').on('shown.bs.modal', function () {
       $('#myInput').trigger('focus')
