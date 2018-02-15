@@ -58,7 +58,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script type="text/javascript">
@@ -66,6 +66,27 @@
         $('#background-image').css('width', $(window).width());
         $('#background-image').css('height', '100%');
       }
+
+      /*$(document).ready(
+      function(){
+          $('.fluid-container').click(
+              function(){
+                  $(this).animate(
+                      {
+                          'margin-left':-$(window).width()
+                      },1000
+                    );
+                      .animate(
+                          {
+                              'margin-left':$(window).width()
+                          },1000,
+                          function(){
+                              $(this).slideUp('fast');
+                          }
+                        );
+
+              });
+      });*/
     </script>
   </body>
 </html>
