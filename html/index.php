@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#" onclick="transition()">Art</a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut()">Art</a>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
       <div id="info" class="text-center">
         <h1>Thomas Young</h1>
         <div >
-          <a class="myButton" href="#" onclick="transition()">Art</a>
+          <a class="myButton" href="#" onclick="loadOut()">Art</a>
           <a class="myButton" href="about_me.php">About Me</a>
         </div>
         <!--<img  src="img/self.jpg" alt=""-1
@@ -64,11 +64,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      window.onload = function(){
+      window.onload = loadIn()
+
+      function loadIn(){
         $('#background-image').css('height', '100%');
+        $('#background-image').animate(
+            {
+                'opacity':1
+            },800, function(){
+              $('#info').animate(
+                {
+                  'opacity':1
+                },1000
+              )
+            }
+        );
       }
 
-      function transition(){
+      function loadOut(){
         $('.fluid-container').animate(
             {
                 'margin-left':-$(window).width(),
