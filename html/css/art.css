@@ -6,6 +6,19 @@
   font-style: normal;
 }
 
+#mainContainer{
+  margin-top: 10vh;
+  position: absolute;
+  opacity: 0;
+}
+
+#background-image{
+  opacity: 0;
+  color: white;
+  float: right;
+  margin-right: -30%;
+}
+
 h1{
   font-family: 'Dorsa', Helvetica, sans-serif;
   font-weight:normal;
@@ -30,6 +43,9 @@ p{
 }
 
 @media all and (orientation:portrait) {
+  body{
+    background-color: #4A0B2D;
+  }
   /* Modal Content (Image) */
   .modal-content {
       margin: auto;
@@ -47,6 +63,8 @@ p{
 }
 
 @media all and (orientation:landscape) {
+  html, body {margin: 0; height: 100%; overflow: hidden;}
+
   /* Modal Content (Image) */
   .modal-content {
       margin: auto;

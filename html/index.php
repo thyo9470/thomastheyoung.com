@@ -8,6 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="prefetch" href="img/sunset.png">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -28,22 +30,22 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="art.php">Art</a>
+            <a class="nav-item nav-link" href="#" onclick="transition()">Art</a>
           </div>
         </div>
       </div>
     </nav>
 
   <div class="fluid-container">
-    <img id="background-image" src="img/F-landscapes/1-landscapes.png" alt="">
+    <img id="background-image" src="img/sunset.png" alt="">
     <div id="mainContainer" class="container">
       <div id="info" class="text-center">
         <h1>Thomas Young</h1>
         <div >
-          <a class="myButton" href="art.php">Art</a>
+          <a class="myButton" href="#" onclick="transition()">Art</a>
           <a class="myButton" href="about_me.php">About Me</a>
         </div>
-        <!--<img  src="img/self.jpg" alt="">
+        <!--<img  src="img/self.jpg" alt=""-1
         <div>
           <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
           <p>  </p>
@@ -63,30 +65,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script type="text/javascript">
       window.onload = function(){
-        $('#background-image').css('width', $(window).width());
         $('#background-image').css('height', '100%');
       }
 
-      /*$(document).ready(
-      function(){
-          $('.fluid-container').click(
-              function(){
-                  $(this).animate(
-                      {
-                          'margin-left':-$(window).width()
-                      },1000
-                    );
-                      .animate(
-                          {
-                              'margin-left':$(window).width()
-                          },1000,
-                          function(){
-                              $(this).slideUp('fast');
-                          }
-                        );
-
-              });
-      });*/
+      function transition(){
+        $('.fluid-container').animate(
+            {
+                'margin-left':-$(window).width(),
+                'opacity':-1
+            },1000,
+            function(){
+              window.location.href = 'art.php';
+            }
+        );
+        $('#info').fadeOut('slow');
+      }
     </script>
   </body>
 </html>

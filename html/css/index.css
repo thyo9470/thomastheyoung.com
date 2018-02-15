@@ -38,6 +38,10 @@ h1{
     transform: translate(-50%, -70%) !important;*/
 }
 
+#background-image{
+  width:2880;
+}
+
 a{
   color: #202020;
 }
