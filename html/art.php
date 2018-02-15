@@ -74,7 +74,6 @@
 <!-- Main Container -->
 <div class="fluid-container">
   <img id="background-image" src="img/sunset.png" alt="">
-  <div class="container">
   <div id="mainContainer" class="container">
     <div class="row text-center text-lg-left fluid-container">
       <?php
@@ -101,7 +100,6 @@
       </div>-->
     </div>
   </div>
-</div>
 </div>
 
     <!-- Optional JavaScript -->
