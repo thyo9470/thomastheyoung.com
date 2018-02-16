@@ -46,7 +46,7 @@
         <div class="row" style="width:100%;">
           <div id="modal-thumbnail-container">
             <a href="#" data-target="#carousel" data-slide-to="0" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
-            <a href="#" data-target="#carousel" data-slide-to="1" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
+          e  <a href="#" data-target="#carousel" data-slide-to="1" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
             <a href="#" data-target="#carousel" data-slide-to="2" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
           </div>
         </div>
@@ -58,13 +58,13 @@
 <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"><img src="img/logo.png" style="max-height:50px;"></a>
+      <a class="navbar-brand" href="#" onclick="loadOut('index.php')"><img src="img/logo.png" style="max-height:50px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#" onclick="loadOut()">Home</a>
+          <a class="nav-item nav-link" href="#" onclick="loadOut('index.php')">Home</a>
           <a class="nav-item nav-link active" href="#">Art <span class="sr-only">(current)</span></a>
         </div>
       </div>
@@ -73,7 +73,7 @@
 
 <!-- Main Container -->
 <div class="fluid-container">
-  <img id="background-image" src="img/sunset.png" alt="">
+  <img id="background-image" src="img/sunset.jpg" alt="">
   <div id="mainContainer" class="container">
     <div class="row text-center text-lg-left fluid-container">
       <?php
@@ -128,7 +128,7 @@
       );
     }
 
-    function loadOut(){
+    function loadOut(path){
       $('#mainContainer').animate(
         {
           'opacity':-1
@@ -140,7 +140,7 @@
                 'opacity':-1
             },1000,
             function(){
-              window.location.href = 'index.php';
+              window.location.href = path;
             }
         );
         $('#info').fadeOut('slow');

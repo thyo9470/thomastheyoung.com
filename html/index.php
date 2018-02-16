@@ -30,20 +30,20 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#" onclick="loadOut()">Art</a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut('art.php')">Art</a>
           </div>
         </div>
       </div>
     </nav>
 
   <div class="fluid-container">
-    <img id="background-image" src="img/sunset.png" alt="">
+    <img id="background-image" src="img/sunset.jpg" alt="">
     <div id="mainContainer" class="container">
       <div id="info" class="text-center">
         <h1>Thomas Young</h1>
         <div >
-          <a class="myButton" href="#" onclick="loadOut()">Art</a>
-          <!--<a class="myButton" href="about_me.php">About Me</a>-->
+          <a class="myButton" href="#" onclick="loadOut('art.php')">Art</a>
+          <a class="myButton" href="files/Resume.pdf" download>Resume</a>
         </div>
         <!--<img  src="img/self.jpg" alt=""-1
         <div>
@@ -81,14 +81,14 @@
         );
       }
 
-      function loadOut(){
+      function loadOut(path){
         $('.fluid-container').animate(
             {
                 'margin-left':-$(window).width(),
                 'opacity':-1
             },1000,
             function(){
-              window.location.href = 'art.php';
+              window.location.href = path;
             }
         );
         $('#info').fadeOut('slow');
