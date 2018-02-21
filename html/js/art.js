@@ -14,7 +14,7 @@ function loadOut(path){
           window.location.href = path;
         }
     );
-    $('#imagesContainer').animate(
+    $('#mainContainer').animate(
         {
             'opacity':-1
         },1000,

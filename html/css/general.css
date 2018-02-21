@@ -1,0 +1,38 @@
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:rgba(0, 0, 0, 0);
+   z-index:100;
+   text-align: center;
+}
+
+#footer a{
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+#footer p{
+  color: white;
+}
+
+/* unvisited link */
+#footer a:link {
+   color: white;
+}
+
+/* visited link */
+#footer a:visited {
+   color: white;
+}
+
+/* mouse over link */
+#footer a:hover {
+   color: white;
+}
+
+/* selected link */
+#footer a:active {
+   color: white;
+}

@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dorsa|Open+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
   </head>
   <body>
 
@@ -35,6 +36,14 @@
         </div>
       </div>
     </nav>
+
+    <footer id="footer" class="footer">
+      <div>
+        <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </footer>
 
   <div class="fluid-container">
     <img id="background-image" src="img/sunset.jpg" alt="">
@@ -65,5 +74,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/load.js"></script>
     <script src="js/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </body>
 </html>
