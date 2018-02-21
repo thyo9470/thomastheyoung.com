@@ -75,7 +75,7 @@
 <div class="fluid-container">
   <img id="background-image" src="img/sunset.jpg" alt="">
   <div id="mainContainer" class="container">
-    <div class="row text-center text-lg-left fluid-container">
+    <div id="imagesContainer" class="row text-center text-lg-left fluid-container">
       <?php
         $currentFolder;
         $imgDir = scandir('img/');
@@ -107,72 +107,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-    <script >
-    $("#carousel").carousel({interval: false});
-
-    function loadIn(){
-      $('#background-image').css('height', '100%');
-      $('#background-image').css('right', '-700px');
-      $('#background-image').animate(
-          {
-              'right': 0,
-              'opacity':1
-          },1000, function(){
-            $('#mainContainer').animate(
-              {
-                'opacity':1
-              },1000
-            );
-          }
-      );
-    }
-
-    function loadOut(path){
-      $('#mainContainer').animate(
-        {
-          'opacity':-1
-        },500
-      )
-      $('#background-image').animate(
-            {
-                'right': -900,
-                'opacity':-1
-            },1000,
-            function(){
-              window.location.href = path;
-            }
-        );
-        $('#info').fadeOut('slow');
-    }
-
-    window.onload = loadIn();
-
-    $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').trigger('focus')
-    })
-
-    function setImage(size, path, name){
-      var modalOut = "<div class='carousel-item active'><img class='d-block w-100 modal-content' src=" + path + String(1) + name +"></div>"
-      var indicator = "<li class='active' data-target='#carousel' data-slide-to='0'>1</li>";
-      $('#image-container').append(modalOut);
-      $('.carousel-indicators').append(indicator);
-      for(i = 2; i <= size; i++){
-        modalOut = "<div class='carousel-item'><img class='d-block w-100 modal-content' role='listbox' src=" + path + String(i) + name +"></div>"
-        indicator = "<li data-target='#carousel' data-slide-to=" + String(i-1) + ">" + String(i) + "</li>";
-        $('#image-container').append(modalOut);
-        $('.carousel-indicators').append(indicator);
-      }
-    }
-
-    $("h2").on("click", "p.test", function(){
-        alert($(this).text());
-    });
-
-    $('#showImage').on('hidden.bs.modal', function (e) {
-      $('#image-container').empty();
-      $('.carousel-indicators').empty();
-    })
-    </script>
+    <script src="js/load.js"></script>
+    <script src="js/art.js"></script>
   </body>
 </html>

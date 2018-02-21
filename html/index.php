@@ -63,36 +63,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      window.onload = loadIn()
-
-      function loadIn(){
-        $('#background-image').css('height', '100%');
-        $('#background-image').animate(
-            {
-                'opacity':1
-            },800, function(){
-              $('#info').animate(
-                {
-                  'opacity':1
-                },1000
-              )
-            }
-        );
-      }
-
-      function loadOut(path){
-        $('.fluid-container').animate(
-            {
-                'margin-left':-$(window).width(),
-                'opacity':-1
-            },1000,
-            function(){
-              window.location.href = path;
-            }
-        );
-        $('#info').fadeOut('slow');
-      }
-    </script>
+    <script src="js/load.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

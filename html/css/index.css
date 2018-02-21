@@ -34,6 +34,7 @@ h1{
 
 #mainContainer {
     padding-top: 20vh;
+    opacity: 0;
 }
 
 #background-image{
@@ -71,7 +72,6 @@ a:active{
   padding: 5px 5px 5px 5px;
   height: auto;
   width: auto;
-  opacity: 0;
 }
 #info div p{
   display: inline-block;
