@@ -54,7 +54,7 @@ p{
   .modal-dialog {
           position: absolute;
           top: 50%;
-          transform: translate(0, -60%) !important;
+          transform: translateY(-60%) !important;
   }
 }
 
@@ -70,6 +70,6 @@ p{
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -60%) !important;
+          transform: translate(-50%, -55%) !important;
   }
 }
