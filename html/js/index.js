@@ -13,25 +13,4 @@ function getQuery() {
 }
 
   window.onload = loadIn()
-  function loadOut(path){
-    localStorage.setItem("h", 700);
-    $('.fluid-container').animate(
-        {
-            'margin-left':-$(window).width(),
-            'opacity':-1
-        },1000,
-        function(){
-          window.location.href = path;
-        }
-    );
-    $('#background-image').animate(
-        {
-            'left':-700,
-            'opacity':-1
-        },1000,
-        function(){
-          window.location.href = path;
-        }
-    );
-    $('#mainContainer').fadeOut('slow');
-  }
+  window.onunload = function(){}; 

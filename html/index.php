@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#" onclick="loadOut('art.php')">Art</a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
       <div id="info" class="text-center">
         <h1>Thomas Young</h1>
         <div >
-          <a class="myButton" href="#" onclick="loadOut('art.php')">Art</a>
+          <a class="myButton" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
           <a class="myButton" href="files/Resume.pdf" download>Resume</a>
         </div>
         <!--<img  src="img/self.jpg" alt=""-1

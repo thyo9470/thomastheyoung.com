@@ -2,30 +2,8 @@ $("#carousel").carousel({interval: false});
 
 
 
-function loadOut(path){
-  $('#background-image').animate(
-        {
-            'right': -900,
-            'opacity':-1
-        },1000,
-        function(){
-          localStorage.setItem("h", 700);
-
-          window.location.href = path;
-        }
-    );
-    $('#mainContainer').animate(
-        {
-            'opacity':-1
-        },1000,
-        function(){
-          window.location.href = path;
-        }
-    );
-    //$('#info').fadeOut('slow');
-}
-
 window.onload = loadIn();
+window.onunload = function(){}; 
 
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')

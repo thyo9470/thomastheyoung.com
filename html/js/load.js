@@ -49,3 +49,35 @@ function loadIn(){
   );
 
 }
+
+function loadOut(path, dir, speed){
+  localStorage.setItem("h", 700);
+
+  getInfo();
+
+  if(dir == 'right'){
+    horizontal = speed * (-$(window).width()/10);
+  }else if(dir == 'left'){
+    horizontal = speed * ($(window).width()/10);
+  }else if(dir='center'){
+    horizontal = $('#mainContainer').css('margin-left');
+  }
+
+  $('#background-image').animate(
+        {
+            [sideAlign]: -700,
+            'opacity':-1
+        },1000,
+        function(){
+          window.location.href = path;
+        }
+    );
+    $('#mainContainer').animate(
+        {
+          'margin-left': horizontal,
+          'opacity':-0.5
+        },800,
+        function(){
+        }
+    );
+}

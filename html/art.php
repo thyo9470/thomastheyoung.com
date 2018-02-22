@@ -63,7 +63,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#" onclick="loadOut('index.php')">Home</a>
+          <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'center', 0)">Home</a>
           <a class="nav-item nav-link active" href="#">Art <span class="sr-only">(current)</span></a>
         </div>
       </div>
@@ -80,7 +80,7 @@
 <!-- Main Container -->
 <div class="fluid-container">
   <img id="background-image" src="img/sunset.jpg" alt="">
-  <div id="mainContainer" class="container">
+  <div id="mainContainer" class="container" style="max-width:1050px">
     <div id="imagesContainer" class="row text-center text-lg-left fluid-container">
       <?php
         $currentFolder;
@@ -90,9 +90,9 @@
             $path = 'img/' . $imgDir[$i];
             $images = scandir($path);
             $count = count($images) - 3;
-            $thumbnailsOut =  "<div class='col-lg-3 col-md-4 col-xs-6.>" .
+            $thumbnailsOut =  "<div class='col-lg-3 col-md-4 col-xs-6. thumbnail-container'>" .
                     "<a href='#' class='d-block mb-4 h-100'  onclick='setImage(" . $count . ",\"" . $path . '/' . "\",\"" . substr($images[3], 1) . "\")'>" .
-                    "<img id='test' class='img-fluid img-thumbnail image' src=" . $path . '/' .$images[2] . " alt='' data-toggle='modal' data-target='#showImage'>" .
+                    "<img style='border-color:rgba(0,0,0,0)' class='img-fluid img-thumbnail image' style='border-radius:0px' src=" . $path . '/' .$images[2] . " alt='' data-toggle='modal' data-target='#showImage'>" .
                     "</a>".
                     "</div>";
             echo $thumbnailsOut;
