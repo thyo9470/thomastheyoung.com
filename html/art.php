@@ -85,7 +85,7 @@
       <?php
         $currentFolder;
         $imgDir = scandir('img/');
-        for($i = 2; $i < count($imgDir); $i++){
+        for($i = count($imgDir)-1; $i > 2; $i--){
           if(is_dir("img/" . $imgDir[$i])){
             $path = 'img/' . $imgDir[$i];
             $images = scandir($path);
