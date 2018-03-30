@@ -42,6 +42,7 @@
         <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <!--<a href="https://www.etsy.com/shop/ThomasTheYoungShoes" target="_blank"><i class="fab fa-etsy fa-2x"></i></a>-->
       </div>
     </footer>
 
@@ -55,13 +56,6 @@
           <a class="myButton" href="files/Resume.pdf" download>Resume</a>
         </div>
         <!--<img  src="img/self.jpg" alt=""-1
-        <div>
-          <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true">  </i></a>
-          <p>  </p>
-          <a href="https://www.linkedin.com/in/thomasy314/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true">  </i></a>
-          <p>  </p>
-          <a href="https://github.com/thyo9470" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        </div>
         <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>-->
       </div>
     </div>

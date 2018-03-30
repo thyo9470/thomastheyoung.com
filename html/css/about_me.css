@@ -1,6 +1,32 @@
 
 
-#header-image{
-  position: absolute;
-  width: 100%;
+#info-pic img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info-text{
+  padding: 5px;
+  overflow: auto;
+  max-height: 60vh;
+}
+
+#google-play-icons{
+
+}
+
+@media all and (orientation:portrait) {
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow-y: auto; !important
+    }
+}
+
+@media all and (orientation:landscape) {
+  html, body {margin: 0; height: 100%; overflow: hidden;}
+  #info-text{
+    margin-right: 50px;
+  }
 }

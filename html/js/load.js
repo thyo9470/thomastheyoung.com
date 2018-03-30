@@ -9,15 +9,17 @@ var vertical = 0;
 
 function getInfo(){
   //figure out where you are to set the alignment of background-image
-
-  if(curPath == '/index.php'){
+  if(curPath == '/index.php' | curPath == '/'){
     sideAlign = "left";
     margin = "margin-left";
   }else if (curPath == '/art.php') {
     sideAlign = 'right';
     margin = "margin-right";
   }
+}
 
+function loadIn(){
+  getInfo();
   if(localStorage["h"]){
     horizontal = localStorage.getItem("h");
     localStorage.removeItem("h");
@@ -26,10 +28,6 @@ function getInfo(){
     vertical = localStorage.getItem("v");
     localStorage.removeItem("v");
   }
-}
-
-function loadIn(){
-  getInfo();
   //setting css elements
   console.log(sideAlign + " " + horizontal);
   $('#background-image').css(sideAlign, -horizontal);
@@ -54,7 +52,6 @@ function loadOut(path, dir, speed){
   localStorage.setItem("h", 700);
 
   getInfo();
-
   if(dir == 'right'){
     horizontal = speed * (-$(window).width()/10);
   }else if(dir == 'left'){
