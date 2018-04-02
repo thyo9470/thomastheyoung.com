@@ -52,7 +52,7 @@ p{
   html, body {margin: 0; height: 100%; overflow: hidden;}
   .display-picture{
     border-radius: 0px;
-    max-width: 100%;
+    max-width: auto;
   }
   #image-container{
     text-align: center;
