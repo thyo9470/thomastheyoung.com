@@ -1,6 +1,6 @@
 
 
-html, body {margin: 0; height: 100%; overflow: hidden;}
+html, body {margin: 0; height: 100%; position: relative; overflow: hidden;}
 
 h1{
   font-family: 'Dorsa', Helvetica, sans-serif;
