@@ -20,36 +20,27 @@
   <!-- Modal -->
   <div class="modal fade" id="showImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" style="max-width:100%;" role="document">
-      <!-- carousel -->
       <div class="modal-content" style="background-color:rgba(0, 0, 0, 0); border:none;">
-      <div class="modal-body">
-        <div  class="carousel slide" id="carousel" data-ride="carousel">
-          <div id="carousel-inner" class="carousel-inner">
-            <div id="image-container">
+        <div class="modal-body">
+          <!-- carousel -->
+          <div  class="carousel slide" id="carousel" data-ride="carousel">
+            <div id="carousel-inner" class="carousel-inner">
+              <div id="image-container">
+              </div>
+              <ol class="carousel-indicators">
+              </ol>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <ol class="carousel-indicators">
-            </ol>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
-      <!--2<div class="modal-footer">
-        <div class="row" style="width:100%;">
-          <div id="modal-thumbnail-container">
-            <a href="#" data-target="#carousel" data-slide-to="0" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
-          e  <a href="#" data-target="#carousel" data-slide-to="1" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
-            <a href="#" data-target="#carousel" data-slide-to="2" class="col"><img class="modalThumbnail" src="img/A-gats-shoes/1-gats-shoes.jpg"></a>
-          </div>
-        </div>
-      </div>-->
-    </div>
     </div>
   </div>
 
