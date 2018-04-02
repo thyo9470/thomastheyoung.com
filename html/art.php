@@ -70,7 +70,7 @@
 <!-- Main Container -->
 <div class="fluid-container">
   <img id="background-image" src="img/sunset.jpg" alt="">
-  <div id="mainContainer" class="container" style="max-width:1050px">
+  <div id="mainContainer" class="container" style="max-width:100%">
     <div id="imagesContainer" class="row text-center text-lg-left fluid-container">
       <?php
         $currentFolder;
