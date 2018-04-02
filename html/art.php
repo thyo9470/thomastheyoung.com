@@ -17,7 +17,6 @@
   </head>
   <body>
 
-
   <!-- Modal -->
   <div class="modal fade" id="showImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" style="max-width:100%;" role="document">
