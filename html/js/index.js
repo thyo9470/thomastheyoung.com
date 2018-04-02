@@ -12,5 +12,10 @@ function getQuery() {
     }
 }
 
+$(document.body).on("touchmove", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+});
+
   window.onload = loadIn()
-  window.onunload = function(){}; 
+  window.onunload = function(){};
