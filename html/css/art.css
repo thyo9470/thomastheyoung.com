@@ -41,10 +41,20 @@ p{
 }
 
 
-.display-picture{
-  border-radius: 0px;
-  max-width: auto;
+@media all and (orientation:portrait) {
+  html, body {margin: 0; height: 100%; overflow-x: hidden;}
+  .display-picture{
+    max-width: 100%;
+  }
 }
-#image-container{
-  text-align: center;
+
+@media all and (orientation:landscape) {
+  html, body {margin: 0; height: 100%; overflow-x: hidden;}
+  .display-picture{
+    border-radius: 0px;
+    max-width: auto;
+  }
+  #image-container{
+    text-align: center;
+  }
 }
