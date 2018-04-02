@@ -12,10 +12,10 @@ function getQuery() {
     }
 }
 
-$(document.body).on("touchmove", function(event) {
+document.body.addEventListener("touchmove", function(event) {
     event.preventDefault();
     event.stopPropagation();
-});
+}, false);
 
   window.onload = loadIn()
   window.onunload = function(){};
