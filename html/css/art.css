@@ -44,7 +44,7 @@ p{
 @media all and (orientation:portrait) {
   html, body {margin: 0; height: 100%; overflow-x: hidden;}
   .display-picture{
-    width: 100%;
+    max-width: 100%;
   }
 }
 
