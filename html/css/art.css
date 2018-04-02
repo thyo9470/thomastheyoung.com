@@ -39,38 +39,3 @@ p{
 .nav-link{
   font-family: Arial, sans-serif;
 }
-
-@media all and (orientation:portrait) {
-  html, body {margin: 0; height: 100%; overflow-x: hidden;}
-  /* Modal Content (Image) */
-  .modal-content {
-      margin: auto;
-      display: block;
-      height: 100%;
-      width: auto;
-  }
-  .modal-footer{
-    color: rgba(0, 0, 0, 0);
-  }
-  .modal-dialog {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-60%) !important;
-  }
-}
-
-@media all and (orientation:landscape) {
-  html, body {margin: 0; height: 100%; overflow: hidden;}
-
-  /* Modal Content (Image) */
-  .modal-content {
-      margin: auto;
-      display: block;
-  }
-  .modal-dialog {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -55%) !important;
-  }
-}
