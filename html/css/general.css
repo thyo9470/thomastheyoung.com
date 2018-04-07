@@ -8,6 +8,8 @@
    text-align: center;
 }
 
+/* footer */
+
 #footer a{
   margin-left: 2.5px;
   margin-right: 2.5px;
@@ -34,6 +36,29 @@
 
 /* selected link */
 #footer a:active {
+   color: white;
+}
+
+
+/* credit link */
+
+/* unvisited link */
+.credit-link:link {
+   color: white;
+}
+
+/* visited link */
+.credit-link:visited {
+   color: white;
+}
+
+/* mouse over link */
+.credit-link:hover {
+   color: white;
+}
+
+/* selected link */
+.credit-link:active {
    color: white;
 }
 

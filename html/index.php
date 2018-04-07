@@ -55,8 +55,6 @@
           <a class="myButton" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
           <a class="myButton" href="files/Resume.pdf" download>Resume</a>
         </div>
-        <!--<img  src="img/self.jpg" alt=""-1
-        <p>I am currently a student at the University of Colorado Boulder studying Computer Science looking to learn more by getting experience in a professional setting. I love programming, game development, drawing, painting, rock climbing, and having interesting experiences.</p>-->
       </div>
     </div>
   </div>

@@ -27,13 +27,13 @@
             <div id="carousel-inner" class="carousel-inner">
               <div id="image-container">
               </div>
-              <ol class="carousel-indicators">
+              <ol class="carousel-indicators carousel-part">
               </ol>
-              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <a class="carousel-control carousel-control-prev carousel-part" href="#carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <a class="carousel-control carousel-control-next carousel-part" href="#carousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -70,7 +70,7 @@
 <!-- Main Container -->
 <div class="fluid-container">
   <img id="background-image" src="img/sunset.jpg" alt="">
-  <div id="mainContainer" class="container" style="max-width:100%">
+  <div id="mainContainer" class="container" style="max-width:80%">
     <div id="imagesContainer" class="row text-center text-lg-left fluid-container">
       <?php
         $currentFolder;
@@ -81,7 +81,7 @@
             $images = scandir($path);
             $count = count($images) - 3;
             $thumbnailsOut =  "<div class='col-lg-3 col-md-4 col-xs-6. thumbnail-container'>" .
-                    "<a href='#' class='d-block mb-4 h-100'  onclick='setImage(" . $count . ",\"" . $path . '/' . "\",\"" . substr($images[3], 1) . "\")'>" .
+                    "<a href='#' class='d-block mb-4 h-100'  onclick='setImage(" . ($count-1) . ",\"" . $path . '/' . "\",\"" . substr($images[2], 1) . "\")'>" .
                     "<img style='border-color:rgba(0,0,0,0)' class='img-fluid img-thumbnail image' style='border-radius:0px' src=" . $path . '/' .$images[2] . " alt='' data-toggle='modal' data-target='#showImage'>" .
                     "</a>".
                     "</div>";
