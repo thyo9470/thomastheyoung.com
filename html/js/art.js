@@ -10,6 +10,8 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 
 function setImage(size, path, name){
+  <!--$('#modal-footer').html('<p>test</p>')-->
+
   var loc = path + name.substring(1, name.length-4)+'.txt'
   var cap_html = getProperties(loc)
   if(cap_html[0].includes('undefined')){
@@ -69,12 +71,23 @@ function getProperties(filePath){
     var title = file_info[i];
     var desc = file_info[i+1];
     if(title != '' & desc != ''){
-      file_ret.push("<div class='carousel-caption carousel-part d-none d-md-block'><h5>" + title + "</h5><p>" + desc + "</p></div>");
+      file_ret.push("<div class='carousel-caption carousel-part' style='display:none'><h5>" + title + "</h5><p>" + desc + "</p></div>");
     }else  if(title == ''){
-      file_ret.push("<div class='carousel-caption carousel-part d-none d-md-block'><p>" + desc + "</p></div>");
+      file_ret.push("<div class='carousel-caption carousel-part' style='display:none'><p>" + desc + "</p></div>");
     }else if(desc == ''){
-      file_ret.push("<div class='carousel-caption carousel-part d-none d-md-block'><h5>" + title + "</h5></div>");
+      file_ret.push("<div class='carousel-caption carousel-part' style='display:none'><h5>" + title + "</h5></div>");
     }
   }
   return file_ret;
 }
+
+$(window).resize(function(){
+  if($('#showImage').is(':visible')){
+    element = $('.active').find('.d-md-block')
+    cap_check = false
+    if(element.css('display') == 'block'){
+        cap_check = true;
+    }
+    console.log(cap_check)
+  }
+})
