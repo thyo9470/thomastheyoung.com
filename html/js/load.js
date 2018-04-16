@@ -24,10 +24,6 @@ function loadIn(){
     horizontal = localStorage.getItem("h");
     localStorage.removeItem("h");
   }
-  if(localStorage["v"]){
-    vertical = localStorage.getItem("v");
-    localStorage.removeItem("v");
-  }
   //setting css elements
   console.log(sideAlign + " " + horizontal);
   $('#background-image').css(sideAlign, -horizontal);
@@ -49,18 +45,24 @@ function loadIn(){
 }
 
 function loadOut(path, dir, speed){
-  localStorage.setItem("h", 700);
+localStorage.setItem("h", 700);
+
+  var trans = true;
 
   getInfo();
   if(dir == 'right'){
     horizontal = speed * (-$(window).width()/10);
   }else if(dir == 'left'){
     horizontal = speed * ($(window).width()/10);
-  }else if(dir='center'){
+  }else if(dir == 'center'){
     horizontal = $('#mainContainer').css('margin-left');
+  }else if(dir == 'none'){
+    trans = false;
+    localStorage.setItem("h", 0);
   }
 
-  $('#background-image').animate(
+  if(trans){
+    $('#background-image').animate(
         {
             [sideAlign]: -700,
             'opacity':-1
@@ -77,4 +79,22 @@ function loadOut(path, dir, speed){
         function(){
         }
     );
+  }else{
+    $('#background-image').animate(
+        {
+            'opacity':-1
+        },1000,
+        function(){
+          window.location.href = path;
+        }
+    );
+    $('#mainContainer').animate(
+        {
+          'opacity':-0.5
+        },800,
+        function(){
+          window.location.href = path;
+        }
+    );
+  }
 }

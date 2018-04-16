@@ -71,16 +71,16 @@ function getProperties(filePath){
     var title = file_info[i];
     var desc = file_info[i+1];
     if(title != '' & desc != ''){
-      file_ret.push("<div class='carousel-caption carousel-part' style='display:none'><h5>" + title + "</h5><p>" + desc + "</p></div>");
+      file_ret.push("<div class='carousel-caption carousel-part'><h5>" + title + "</h5><p>" + desc + "</p></div>");
     }else  if(title == ''){
-      file_ret.push("<div class='carousel-caption carousel-part' style='display:none'><p>" + desc + "</p></div>");
+      file_ret.push("<div class='carousel-caption carousel-part'><p>" + desc + "</p></div>");
     }else if(desc == ''){
-      file_ret.push("<div class='carousel-caption carousel-part' style='display:none'><h5>" + title + "</h5></div>");
+      file_ret.push("<div class='carousel-caption carousel-part'><h5>" + title + "</h5></div>");
     }
   }
   return file_ret;
 }
-
+/*
 $(window).resize(function(){
   if($('#showImage').is(':visible')){
     element = $('.active').find('.d-md-block')
@@ -90,4 +90,4 @@ $(window).resize(function(){
     }
     console.log(cap_check)
   }
-})
+})*/

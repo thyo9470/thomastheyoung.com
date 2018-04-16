@@ -32,6 +32,7 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut('about_me.php', 'none', 0)">About Me</a>
           </div>
         </div>
       </div>

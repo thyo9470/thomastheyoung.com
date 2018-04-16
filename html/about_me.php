@@ -31,8 +31,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'none', 0)">Home</a>
             <a class="nav-item nav-link" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
+            <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
           </div>
         </div>
       </div>
@@ -47,49 +48,18 @@
       <div id="info-text" class="container col text-center">
         <h1>Contact me:</h1>
         <p>
-          Email: <a href="thomasy314@gmail.com">thomasy314@gmail.com</a>
-          <br>
-          <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-          <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          Email: <a href="mailto:thomasy314@gmail.com">thomasy314@gmail.com</a>
+          <div>
+            <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
         </p>
-        <!--<h1>Thomas Young</h1>
-        <p>I am a sophmore at the University of Colorado studying Computer Science B.S. </p>
-        <p>
-          I love art,
-          rock climbing, programming, and food
-        </p>
-        <p>
-          I have been programming to some degree since the age of 13. My passion for computere science
-          came from my love of video games. After a year of learning on my own, I took my first programming
-          class in high school. From that first class I have worked on interesting projects
-          from a couple simple android games which are beta tested on the android app store
-        </p>
+        <p>Google Play beta tested games:</p>
         <div id="google-play-icons">
           <a href="https://play.google.com/store/apps/details?id=com.Cubez.HappySquare" target="_blank"><i class="fas fa-fighter-jet fa-2x"></i></a>
           <a href="https://play.google.com/store/apps/details?id=com.cubez.concentrics" target="_blank"><i class="fas fa-circle-notch fa-2x"></i></a>
         </div>
-        <p>
-          to more professional projects such as <a href="Graduat.io">Graduat.io</a>, a planner for school.
-          I am also a member of the IT Student Governance Board here at CU. With this group we try to solve problems
-          students have with the technology on campus from poor wifi and printing, to creating
-          a better experience on the various websites they need to use.
-        </p>
-        <p>
-          Though computers are great I like to explore my creative side too. I have a passion for art, but more
-          specificly pop and street art. Recently I have been painting shoes for family and friends with various designs
-          and patterns using acrylic paint.
-        </p>
-        <p>
-          To me life is all about the experiences you have. I have a passion for learning and exploring the world around me.
-          Through my various hobbies and interests I plan on continuing to grow as a person.
-        </p>
-        <div>
-          <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-          <!--<a href="https://www.etsy.com/shop/ThomasTheYoungShoes" target="_blank"><i class="fab fa-etsy fa-2x"></i></a>
-        </div>-->
       </div>
     </div>
   </div>
