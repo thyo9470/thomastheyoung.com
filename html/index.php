@@ -24,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img id="logo" src="img/logo.png"></a>
+        <a class="nav-item nav-link active" href="#"><img id="logo" src="img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +32,7 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
-            <a class="nav-item nav-link" href="#" onclick="loadOut('about_me.php', 'none', 0)">About Me</a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut('about_me.php', 'none', 0)">Contact Me</a>
           </div>
         </div>
       </div>

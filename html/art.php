@@ -55,7 +55,7 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'center', 0)">Home</a>
           <a class="nav-item nav-link active" href="#">Art <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#" onclick="loadOut('about_me.php', 'center', 0)">About Me</a>
+          <a class="nav-item nav-link" href="#" onclick="loadOut('about_me.php', 'center', 0)">Contact Me</a>
         </div>
       </div>
     </div>

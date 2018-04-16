@@ -17,7 +17,6 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Dorsa|Open+Sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about_me.css">
     <link rel="stylesheet" href="css/general.css">
   </head>
@@ -25,44 +24,50 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img id="logo" src="img/logo.png"></a>
+        <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'none', 2)"><img id="logo" src="img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'none', 0)">Home</a>
+            <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'none', 2)">Home</a>
             <a class="nav-item nav-link" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
-            <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#">Contact Me<span class="sr-only">(current)</span></a>
           </div>
         </div>
       </div>
     </nav>
 
-  <div class="fluid-container">
-    <img id="background-image" src="img/sunset.jpg" alt="">
-    <div id="mainContainer" class="row">
-      <div id="info-pic" class="container col">
-        <img  src="img/Self.png"/>
+    <footer id="footer" class="footer">
+      <div>
+        <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <!--<a href="https://www.etsy.com/shop/ThomasTheYoungShoes" target="_blank"><i class="fab fa-etsy fa-2x"></i></a>-->
       </div>
-      <div id="info-text" class="container col text-center">
-        <h1>Contact me:</h1>
-        <p>
-          Email: <a href="mailto:thomasy314@gmail.com">thomasy314@gmail.com</a>
-          <div>
-            <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </footer>
+
+    <div class="fluid-container">
+      <img id="background-image" src="img/sunset.jpg" alt="">
+      <div id="mainContainer" class="container">
+        <div id="info" class="text-center">
+          <h1>Contact me:</h1>
+          <p>
+            Email: <a href="mailto:thomasy314@gmail.com">thomasy314@gmail.com</a>
+            <div>
+              <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+              <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+          </p>
+          <p>Google Play beta tested games:</p>
+          <div id="google-play-icons">
+            <a href="https://play.google.com/store/apps/details?id=com.Cubez.HappySquare" target="_blank"><i class="fas fa-fighter-jet fa-2x"></i></a>
+            <a href="https://play.google.com/store/apps/details?id=com.cubez.concentrics" target="_blank"><i class="fas fa-circle-notch fa-2x"></i></a>
           </div>
-        </p>
-        <p>Google Play beta tested games:</p>
-        <div id="google-play-icons">
-          <a href="https://play.google.com/store/apps/details?id=com.Cubez.HappySquare" target="_blank"><i class="fas fa-fighter-jet fa-2x"></i></a>
-          <a href="https://play.google.com/store/apps/details?id=com.cubez.concentrics" target="_blank"><i class="fas fa-circle-notch fa-2x"></i></a>
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
