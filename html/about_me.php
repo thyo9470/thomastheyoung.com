@@ -38,15 +38,6 @@
       </div>
     </nav>
 
-    <footer id="footer" class="footer">
-      <div>
-        <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <!--<a href="https://www.etsy.com/shop/ThomasTheYoungShoes" target="_blank"><i class="fab fa-etsy fa-2x"></i></a>-->
-      </div>
-    </footer>
-
     <div class="fluid-container">
       <img id="background-image" src="img/sunset.jpg" alt="">
       <div id="mainContainer" class="container">
