@@ -8,6 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="google-site-verification" content="7EK36x-u-M4RtJqwW6a26VD9-dqMHzehtK-bGF55EGc" />
+
     <link rel="prefetch" href="img/sunset.png">
 
     <!-- Bootstrap CSS -->

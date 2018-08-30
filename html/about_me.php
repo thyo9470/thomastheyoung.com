@@ -44,7 +44,7 @@
         <div id="info" class="text-center">
           <h1>Contact me:</h1>
           <p>
-            Email: <a href="mailto:thomasy314@gmail.com">thomasy314@gmail.com</a>
+            Email: <a href="mailto:Thomas@ThomasTheYoung.com">Thomas@ThomasTheYoung.com</a>
             <div>
               <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
               <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
