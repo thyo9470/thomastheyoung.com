@@ -1,38 +1,37 @@
-
+<?php
+	session_start();
+?>
 
 <html>
- <head>
-  <title>PHP Test</title>
- </head>
- <body>
+    <head>
+        <title>PHP Test</title>
+    </head>
+    <body>
+        <?php
+        require 'vendor/autoload.php';
 
-test
+        $session = new SpotifyWebAPI\Session(
+            '530d37612b3d4e6c8174bc5376c47a58',
+            '39c4942e5b3548e092dd492c9aded83b',
+            'http://thomastheyoung.com/callback.php'
+        );
 
- <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+        // Request a access token using the code from Spotify
+        $session->requestAccessToken($_GET['code']);
 
-require 'vendor/autoload.php';
+        $accessToken = $session->getAccessToken();
+        $refreshToken = $session->getRefreshToken();
 
-$session = new SpotifyWebAPI\Session(
-    '530d37612b3d4e6c8174bc5376c47a58',
-    '39c4942e5b3548e092dd492c9aded83b',
-    'http://thomastheyoung.com/callback.php'
-);
+        $_SESSION['access'] = $accessToken;
+        $_SESSION['refresh'] = $refreshToken;
 
-// Request a access token using the code from Spotify
-$session->requestAccessToken($_GET['code']);
 
-$accessToken = $session->getAccessToken();
-$refreshToken = $session->getRefreshToken();
+        //header('Location: app.php?access='.$accessToken);
+        header('Location: app.php');
 
-// Store the access and refresh tokens somewhere. In a database for example.
+        die();
 
-// Send the user along and fetch some data!
-header('Location: app.php?access='.$accessToken);
-die();
-
-?> 
- </body>
+        ?> 
+    </body>
 </html>

@@ -1,37 +1,25 @@
-
+<?php
+    session_start();
+?>
 
 <html>
- <head>
-  <title>PHP Test</title>
- </head>
- <body>
- <?php 
+    <head>
+        <title>Spotify</title>
+    </head>
+    <body>
+        <?php 
 
-error_reporting(E_ALL);                                                                              
- ini_set('display_errors', 1);  
+        error_reporting(E_ALL);                                                                              
+        ini_set('display_errors', 1);  
+    
+        require("spotify_suggest.php");
 
-require 'vendor/autoload.php';
+        $suggest = new suggester( $_SESSION["access"], $_SESSION["refresh"], TRUE );
 
-$api = new SpotifyWebAPI\SpotifyWebAPI();
+        $suggest->get_top("artists");        
 
+        $suggest->get_top("tracks");
 
-// Fetch the saved access token from somewhere. A database for example.
-$api->setAccessToken($_GET["access"]);
-
-$data = $api->me();
-
-print_r($data->id);
-
-print_r($api->getMySavedTracks(['limit'=>5]));
-
-
-/*foreach($data as $key => $value){
-    echo $key . '<br>';
-    print_r($value);
-    echo '<br><br>';
-}*/
-
-
-?> 
- </body>
+        ?> 
+    </body>
 </html>
