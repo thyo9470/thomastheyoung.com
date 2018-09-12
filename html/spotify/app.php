@@ -14,13 +14,16 @@
     
         require("spotify_suggest.php");
 
-        echo $_SESSION["access"];
-        echo "<br>";
-        echo $_SESSION["refresh"];
+        $suggest;
 
-        die();
+        if($_SESSION["is_host"]){
+            echo "yes";
+            $suggest = suggester::with_all( $_SESSION["access"], $_SESSION["refresh"], TRUE);
+        }else{
+            echo "no";
+            $suggest = suggester::with_all( $_SESSION["access"], $_SESSION["refresh"], FALSE, $_GET["session_id"]);
+        }
 
-        $suggest = new suggester( $_SESSION["access"], $_SESSION["refresh"], $_SESSION["is_host"] );
 
         $suggest->get_top("artists");        
 

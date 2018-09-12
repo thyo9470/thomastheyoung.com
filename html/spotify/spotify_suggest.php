@@ -3,7 +3,7 @@
 <?php
 
 require '../vendor/autoload.php';
-require("../files/songs.php");
+require("songs.php");
 
 class suggester {
 
@@ -24,17 +24,24 @@ class suggester {
     // connection object for mysqli
     private $conn;
 
+    function __construct(){
+
+        $this->songs = get_songs();
+
+    }
+
     /*
         @param Access and refrsh token for spotify api (both string)
     */
-    function __construct( $accesstoken, $refreshtoken, $is_host=FALSE, $session_name=NULL ){
+    public static function with_all( $accesstoken, $refreshtoken, $is_host=FALSE, $session_id=NULL){
+    
+        $out = new self();
 
-
-        $this->songs = get_songs();
-        $this->initSQL();
-        $this->initSpotify($accesstoken, $refreshtoken);
-        $this->createUser($is_host, $session_name);
-        print($this->get_unique_name());
+        $out->initSQL();
+        $out->initSpotify($accesstoken, $refreshtoken);
+        $out->createUser($is_host, $session_id);
+    
+        return $out;
     }
 
 
@@ -83,7 +90,7 @@ class suggester {
 
         @param Boolean if the given user is a host (Default: FALSE) (boolean)
     */
-    public function createUser( $is_host = FALSE, $session_name = NULL) {
+    public function createUser( $is_host = FALSE, $session_id=NULL) {
 
         $data   = $this->api->me();
 
@@ -94,19 +101,15 @@ class suggester {
 
         $success = $this->executeSQL( $sql );
 
+
         if($success && $is_host){
             $session_id = $this->createSession();
-            $sql    = "UPDATE User SET SessionID={$session_id} WHERE ID='{$id}';";
+        }
+
+        if($success){
+            $sql = "UPDATE User SET SessionID={$session_id} WHERE ID='{$id}';";
+            echo $sql;
             $this->executeSQL( $sql );
-        } elseif ( !$is_host ){
-            $sql = "SELECT ID FROM Session WHERE Name='{$session_name}'";
-            $session_id;
-            if ($result = $this->conn->query($sql)) {
-                /* fetch associative array */
-                while ($row = $result->fetch_assoc()) {
-                    array_push($session_id, $row["ID"]);
-                }
-            }
         }
     }
 
@@ -115,11 +118,13 @@ class suggester {
 
         @return SessionID for the new session (int)
     */
-    public function createSession(  ) {
+    private function createSession(  ) {
         
         $session_id = $this->get_unique_id( "Session" );
 
         $session_name = $this->get_unique_name();
+
+        echo $session_name;
 
         $sql = "INSERT INTO Session (ID, Name) VALUES ('{$session_id}', '{$session_name}');";
 
@@ -128,7 +133,28 @@ class suggester {
         return $session_id;
 
     }
-    
+   
+    public function findSession( $session_name ) {
+
+        $sql = "SELECT ID FROM Session WHERE Name='{$session_name}'";
+
+        $session_id = array();
+
+        if ($result = $this->conn->query($sql)) {
+            /* fetch associative array */
+            while ($row = $result->fetch_assoc()) {
+                array_push($session_id, $row["ID"]);
+            }
+        }
+
+        if (count($session_id) > 0){
+            return $session_id[0];
+        }else{
+            return NULL;
+        }
+
+    }
+ 
     /*
         @param  $type: The type of entity you want returned (Artists or Tracks) (string)
                 $limit: The number of entities you want returned (Default: 20) (int)

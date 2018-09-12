@@ -26,7 +26,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
       <div class="container-fluid">
-        <a class="nav-item nav-link active" href="#"><img id="logo" src="img/logo.png"></a>
+        <!--<a class="nav-item nav-link active" href="#"><img id="logo" src="img/logo.png" style="max-height:50px"></a>-->
+        <a class="navbar-brand" href="#" ><img src="img/logo.png" style="max-height:50px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
