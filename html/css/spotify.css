@@ -1,0 +1,53 @@
+
+
+html, body {margin: 0; height: 100%; position: relative; overflow: hidden;}
+
+body{
+  background-image: url('/img/spotify.jpg');
+  background-size: auto 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #121212;
+}
+
+h1{
+  font-family: 'Dorsa', Helvetica, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 6.0em;
+  color: #1DB954;
+}
+
+p{
+  font-family:  Helvetica, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 1.2em;
+}
+
+.nav-link{
+  font-family: Arial, sans-serif;
+}
+
+a{
+  color: #1DB954;
+  border-color: #1DB954;
+}
+a:hover{
+  color: #1DB954;
+}
+a:hover{
+  color: #1DB954;
+}
+a:active{
+  color: #1DB954;
+}
+#navbar {
+  width: 100%;
+  display: block;
+}
+
+#logo{
+  max-height: 50px;
+}
