@@ -5,7 +5,7 @@
 require '../vendor/autoload.php';
 require("songs.php");
 
-class suggester {
+class Jockey {
 
     private $songs;
 
@@ -33,9 +33,11 @@ class suggester {
     /*
         @param Access and refrsh token for spotify api (both string)
     */
-    public static function with_all( $accesstoken, $refreshtoken, $is_host=FALSE, $session_id=NULL){
+    public static function with_all( $accesstoken, $refreshtoken, $is_host=FALSE, $session=NULL){
     
         $out = new self();
+
+        $session_id = $session[0];
 
         $out->initSQL();
         $out->initSpotify($accesstoken, $refreshtoken);
@@ -108,7 +110,7 @@ class suggester {
 
         if($success){
             $sql = "UPDATE User SET SessionID={$session_id} WHERE ID='{$id}';";
-            echo $sql;
+            //echo $sql;
             $this->executeSQL( $sql );
         }
     }
@@ -261,6 +263,21 @@ class suggester {
         return $unique_name;
 
     }
+
+    /*
+        starts playing music
+    */
+    public function playMusic(){
+        $devices = $this->api->getMyDevices();
+        if(count($devices->devices) > 0){
+            $device_id = $devices->devices[0]->id;
+            $this->api->play();
+            echo $device_id;
+        }else{
+            echo '<script type="text/javascript"> window.open("https://open.spotify.com", "_blank") </script>';
+        }
+    }
+
 }
 
 ?>
