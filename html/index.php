@@ -57,7 +57,7 @@
         <h1>Thomas Young</h1>
         <div >
           <a class="myButton" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
-          <a class="myButton" href="files/Resume.pdf" download>Resume</a>
+          <a class="myButton" href="files/Thomas_Young_Resume.pdf" download>Resume</a>
         </div>
       </div>
     </div>
