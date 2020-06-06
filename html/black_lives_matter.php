@@ -17,40 +17,20 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Dorsa|Open+Sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/about_me.css">
+    <link rel="stylesheet" href="css/black_lives_matter.css">
     <link rel="stylesheet" href="css/general.css">
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar" style="z-index: 100">
-      <div class="container-fluid">
-        <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'none', 2)"><img id="logo" src="img/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#" onclick="loadOut('index.php', 'none', 2)">Home</a>
-            <a class="nav-item nav-link" href="#" onclick="loadOut('art.php', 'right', 2)">Art</a>
-            <a class="nav-item nav-link active" href="#">Contact Me<span class="sr-only">(current)</span></a>
-          </div>
-        </div>
-      </div>
-    </nav>
 
     <div class="fluid-container">
       <img id="background-image" src="img/sunset.jpg" alt="">
       <div id="mainContainer" class="container">
         <div id="info" class="text-center">
-          <h1>Contact me:</h1>
-          <p>
-            Email: <a href="mailto:Thomas@ThomasTheYoung.com">Thomas@ThomasTheYoung.com</a>
-            <div>
-              <a href="https://www.instagram.com/thomastheyoung/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-              <a href="https://github.com/thyo9470" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-              <a href="https://www.linkedin.com/in/thomasy314" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
-          </p>
+	<h2>Black Lives Matter Links</h2>
+	<br>
+	<a href="https://docs.google.com/spreadsheets/d/1fpdRY5fwoyt04Il6y9bToWjv4wUaIoMAQERoE2A140U/edit?usp=sharing" target="_blank">Black Lives Matter Protest MaterDoc</a>
+	<br>
+	<a href="https://msha.ke/30flirtyfilm/#top-picks" target="_blank">Actions for Breonna Taylor</a>
         </div>
       </div>
     </div>
